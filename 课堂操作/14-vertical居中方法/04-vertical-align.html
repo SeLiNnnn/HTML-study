@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>04-vertical-align</title>
+    <style>
+        body, dl, dd, p, h1, h2, h3, h4, h5, h6 {
+            margin: 0;
+        }
+
+        ol, ul, li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        img {
+            border: none;
+        }
+        #wrap {
+            width: 500px;
+            height: 500px;
+            border: 5px solid pink;
+            margin: 50px auto;
+        }
+        #wrap .fgm {
+            vertical-align: top;
+            font-size: 40px;
+        }
+        #wrap img {
+            /*vertical-align: top;*/
+            vertical-align: -30px;/*修改图片的基线，移动的是文字，因为图片比文字大，如果文字更大，则移动的就是图片*/
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <span>我的天辣</span>
+        <!--<span class="fgm">奉光咪为什么有120斤！</span>-->
+        <img src="images/1.jpg" alt="">
+    </div>
+</body>
+</html>

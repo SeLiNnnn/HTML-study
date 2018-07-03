@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>10-fixed定位</title>
+    <style>
+        body, dl, dd, p, h1, h2, h3, h4, h5, h6 {
+            margin: 0;
+        }
+
+        ol, ul, li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        img {
+            border: none;
+        }
+        #box {
+            position: fixed;
+            top: 200px;
+            left: 20px;
+            width: 100px;
+            height: 200px;
+            background: pink;
+        }
+        #box p{
+            position: absolute;
+            top: 20px;
+            left: 0;
+            width: 20px;
+            height:  20px;
+            background: red;
+        }
+    </style>
+</head>
+<body style="height: 2000px">
+    <div id="box">
+        <p></p>
+    </div>
+</body>
+</html>

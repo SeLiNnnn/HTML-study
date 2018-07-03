@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>06-清除浮动</title>
+    <style>
+        body, dl, dd, p, h1, h2, h3, h4, h5, h6 {
+            margin: 0;
+        }
+
+        ol, ul, li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        img {
+            border: none;
+        }
+        #wrap {
+            width: 500px;
+             height: 500px;
+            border: 1px solid #999;
+        }
+        #wrap p {
+            width: 150px;
+            height: 100px;
+        }
+        #wrap p.p1{
+            float: left;
+            background: pink;
+        }
+        #wrap p.p2{
+            float: left;
+            background: #0cf;
+        }
+        #wrap p.p3{
+            float: left;
+            background: #9fc;
+        }
+        #wrap p.p4{
+            background: #f36;
+            height: 150px;
+        }
+        .clear{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <p class="p1"></p>
+        <p class="p2"></p>
+        <p class="p3"></p>
+
+        <div class="clear"></div>
+        <!--<div style="clear: both"></div>-->
+
+        <p class="p4"></p>
+    </div>
+</body>
+</html>

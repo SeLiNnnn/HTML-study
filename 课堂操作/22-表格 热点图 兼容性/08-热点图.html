@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>08-热点图</title>
+        <meta name="keywords" content="关键词">
+        <meta name="description" content="描述">
+        <meta name="author" content="SeLiNnnn">
+        <style>
+            body,dl,dd,p,h1,h2,h3,h4,h5,h6{margin:0;}
+            ol,ul,li{margin:0;padding:0;list-style:none;}
+            img{border:none;}
+            a{text-decoration:none;}
+            area {
+                outline: 0;/* 去掉点击时的边框 */
+            }
+        </style>
+    </head>
+    <body>
+
+        <!-- 第一步，关联img和map 两者可以不再同一层级 -->
+        <img src="img/1.png" alt="" usemap="#vans">
+
+        <map name="vans" id="vans">
+            <!-- area跳转功能相当于a标签 但area可在map里规定区域
+                area通过shape定义形状 可以是圆形circle也可以是方形rect
+                使用coords定义区域位置 圆形coords="50,50,60";分别代表x坐标，y坐标，半径
+                方形coords="10,20,40,30";分别代表左顶点x坐标，左顶点y坐标，右下角顶点X，右下角顶点y
+             -->
+
+
+            <area shape="circle" coords="50,50,60" href="http://www.baidu.com" alt="描述">
+            <area shape="rect" coords="100,100,200,300" href="http://www.bigpar.com" alt="表明链接的用途">
+        </map>
+
+
+    </body>
+</html>

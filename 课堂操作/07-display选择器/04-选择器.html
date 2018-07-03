@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>04-选择器</title>
+    <style>
+        body, dl, dd, p, h1, h2, h3, h4, h5, h6 {
+            margin: 0;
+        }
+
+        ol, ul, li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        img {
+            border: none;
+        }
+
+        #header{
+            height: 300px;
+            background: pink;
+        }
+        #content{
+            height: 400px;
+            background: papayawhip;
+        }
+        .txt{
+            color: lightblue;
+        }
+        span.txt#msg{
+            font-weight: bold;
+        }
+        #content p span{
+            color: greenyellow;
+        }
+        #content a,p,span{
+            color: yellow;
+        }
+        div * {
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+
+    <!--header start-->
+    <div id="header">
+        <span class="txt">哈哈哈</span>
+        <span class="txt" id="msg">哦哦哦哦</span>
+    </div>
+
+    <!--content start-->
+    <div id="content">
+        <a>科科科</a>
+        <p>
+            <span>111</span>
+        </p>
+        <p>222</p>
+    </div>
+
+    <!--footer start-->
+    <div id="footer">
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>05-垂直居中</title>
+    <style>
+        body, dl, dd, p, h1, h2, h3, h4, h5, h6 {
+            margin: 0;
+        }
+
+        ol, ul, li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        img {
+            border: none;
+        }
+        #wrap{
+            width: 800px;
+            height: 500px;
+            border: 5px solid pink;
+            margin: 50px auto;
+            text-align: center;/*当p变成inline-block后给父级设定text-align使其水平居中*/
+            line-height: 500px;/*基于基线的垂直居中*/
+        }
+        #wrap p{
+            display: inline-block;
+            vertical-align: middle;/*加上vertical-align后才是真正的使基线居中*/
+            width: 100px;
+            height: 100px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <p></p>
+    </div>
+</body>
+</html>

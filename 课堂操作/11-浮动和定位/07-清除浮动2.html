@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>07-清除浮动2</title>
+    <style>
+        body, dl, dd, p, h1, h2, h3, h4, h5, h6 {
+            margin: 0;
+        }
+
+        ol, ul, li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        img {
+            border: none;
+        }
+        .clearfloat::after{content: '';display:block;clear:both;}
+
+        #wrap {
+            width: 500px;
+            height: 500px;
+            border: 1px solid #999;
+        }
+        #wrap p {
+            width: 150px;
+            height: 100px;
+        }
+        #wrap p.p1{
+            float: left;
+            background: pink;
+        }
+        #wrap p.p2{
+            float: left;
+            background: #0cf;
+        }
+        #wrap p.p3{
+            float: left;
+            background: #9fc;
+        }
+        #wrap p.p4{
+            background: #f36;
+            height: 150px;
+        }
+        /*.clear{*/
+            /*clear: both;*/
+        /*}*/
+        /*#box{*/
+            /*overflow: hidden;*/
+        /*}*/
+        #box::after{/*css3里严格使用::*/
+            content: '';/*必须有content和display*/
+            display: block;/*必须是块级才能清除浮动*/
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="box">
+            <p class="p1"></p>
+            <p class="p2"></p>
+            <p class="p3"></p>
+        </div>
+
+
+        <div class="clear"></div>
+        <!--<div style="clear: both"></div>-->
+
+        <p class="p4"></p>
+    </div>
+</body>
+</html>

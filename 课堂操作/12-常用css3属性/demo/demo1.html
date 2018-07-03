@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>人物介绍</title>
+    <style>
+        body, dl, dd, p, h1, h2, h3, h4, h5, h6 {
+            margin: 0;
+        }
+
+        ol, ul, li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        img {
+            border: none;
+        }
+        #wrap {
+            width: 380px;
+            height: 540px;
+            margin: 50px 0 0 100px;
+            /*border: 1px solid #f00;*/
+        }
+        #wrap ul li {
+            height: 134px;
+            border-bottom: 1px solid #bbb;
+            cursor: pointer;
+        }
+        #wrap ul li .left,#wrap ul li .right {
+            float: left;
+        }
+        #wrap ul li .left {
+            width: 90px;
+            height: 90px;
+            background: pink;
+            margin-top: 18px;
+            margin-left: 10px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 4px solid #ddd;
+        }
+        #wrap ul li .left:hover {
+            border-color: #f90;
+        }
+        #wrap ul li .left img{
+            width: 100%;
+            height: 100%;
+        }
+        #wrap ul li .right {
+            position: relative;
+            top: 50%;
+            width: 260px;
+            /*background: #6ff;*/
+            margin-left: 10px;
+            transform: translate(0, -50%);
+        }
+        #wrap ul li .right h6 {
+            font-size: 14px;
+        }
+        #wrap ul li .right h6:hover {
+            color: #f90;
+        }
+        #wrap ul li .right p {
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        #wrap ul li .right p:hover {
+            color: #f90;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <ul>
+            <li>
+                <div class="left">
+                    <img src="images/1.jpg" alt="">
+                </div>
+                <div class="right">
+                    <h6>AmyRoiland</h6>
+                    <p>「AmyRoiland」美国洛杉矶 风格复古又
+                        新潮，总能在清新、性感和复古中轻松切
+                        换。</p>
+                </div>
+            </li>
+            <li>
+                <div class="left">
+                    <img src="images/2.jpg" alt="">
+                </div>
+                <div class="right">
+                    <h6>Tonya S.</h6>
+                    <p>「Tonya S.」美国。</p>
+                </div>
+            </li>
+            <li>
+                <div class="left">
+                    <img src="images/3.jpg" alt="">
+                </div>
+                <div class="right">
+                    <h6>
+                        EvaVelt</h6>
+                    <p>「EvaVelt」荷兰时尚博主.</p>
+                </div>
+            </li>
+            <li>
+                <div class="left">
+                    <img src="images/4.jpg" alt="">
+                </div>
+                <div class="right">
+                    <h6>
+                        Nicola Nilsen</h6>
+                    <p>「Nicola Nilsen」挪威 风格复古又
+                        新潮。</p>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+
+</body>
+</html>

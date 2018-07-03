@@ -1,0 +1,94 @@
+<!doctype html> <!-- 文档类型：HTML文档 -->
+<html lang='en'>					<!--html根标签 lang翻译：成英文-->
+	<head>							<!--网页头部-->
+	<meta charset='UTF-8'/>			<!--字符编码：UTF-8 国际编码-->
+	<meta name='keywords' content='关键词1,关键词2 给搜索引擎抓取用'/>
+	<meta name='description' content='网站描述'/>
+	<meta name='Author' content='68603587@qq.com'/>
+	<title>hello world</title>		<!--网页标题-->
+	<style>
+		*{
+			margin:0;padding:0;
+		}
+		.clearfix:after{
+			content:'';
+			display:block;
+			clear:both;
+		
+		}
+		.fl{
+		
+			float:left;
+		}
+		.fr{
+		
+			float:right;
+		}
+		body{
+			font:14px/1.5 'Microsoft YaHei';
+		}
+		.container{
+			height:75px;
+			width:100%;
+			background:url('images/demo4/topbg.jpg') repeat-x;
+			min-width:980px; /* 最小宽度 */
+
+		}
+		.wrap{
+			width:980px;
+			padding:15px 0;
+			margin:auto;
+			/* background-color: #ccc; */
+		}
+		
+		.wrap ul{
+			width:830px;
+			margin-left:5px;
+		}
+		.wrap ul li{
+			list-style:none;
+			text-align:center;
+		
+		}
+		.wrap ul li a{
+			display:block;
+			width:100px;
+			line-height:44px;
+			text-decoration:none;
+			color:#fff;
+		}
+		.wrap ul li.active a{
+			background:url('images/demo4/btn2.png') no-repeat 0px center;
+		}
+		.wrap ul li a:hover{
+			background:url('images/demo4/btn2.png') no-repeat 0px center;
+		}
+		
+		
+		
+		
+
+
+	</style>
+	</head>
+	<body><!--网页主体:可视化区域-->
+		<div class="container">
+			<div class="wrap clearfix">
+				<img class='fl' src="images/demo4/weixin.png" alt="">
+				<ul class='clearfix fl'> 
+					<li class='active fl'><a href="#">首页</a></li>
+					<li class='fl'><a href="#">帮助</a></li>
+					<li class='fl'><a href="#">公众</a></li>
+					<li class='fl'><a href="#">微信</a></li>
+					<li class='fl'><a href="#">支付</a></li>
+					<li class='fl'><a href="#">网页版</a></li>
+					<li class='fl'><a href="#">表情</a></li>
+					<li class='fl'><a href="#">广告</a></li>
+				</ul>
+			</div>	
+		</div>
+			
+
+		
+	</body>
+</html> 

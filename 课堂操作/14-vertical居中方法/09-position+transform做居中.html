@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>09-position+tranform做居中</title>
+    <style>
+        body, dl, dd, p, h1, h2, h3, h4, h5, h6 {
+            margin: 0;
+        }
+
+        ol, ul, li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        img {
+            border: none;
+        }
+        #wrap{
+            position: relative;
+            width: 800px;
+            height: 500px;
+            border: 5px solid pink;
+            margin: 50px auto;
+        }
+        #wrap p{
+            /*使用于所有情况*/
+            position: absolute;
+            top: 50%;/*参照父级高度的50%*/
+            left: 50%;/*参照父级宽度的50%*/
+            width: 200px;
+            height: 200px;
+            background: red;
+            transform: translate(-50%,-50%);/*百分比参照于自身*/
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <p></p>
+    </div>
+</body>
+</html>

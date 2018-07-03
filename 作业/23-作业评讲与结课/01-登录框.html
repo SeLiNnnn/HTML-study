@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>01-登录框</title>
+        <meta name="keywords" content="关键词">
+        <meta name="description" content="描述">
+        <meta name="author" content="SeLiNnnn">
+        <style>
+            body,dl,dd,p,h1,h2,h3,h4,h5,h6{margin:0;}
+            ol,ul,li{margin:0;padding:0;list-style:none;}
+            img{border:none;}
+            a{text-decoration:none;}
+
+            #wrap {
+                width: 494px;
+                height: 433px;/*488-45=433*/
+                margin: 50px auto;
+                border-radius: 10px;
+                box-shadow: 0 0 10px #bbb;
+                padding-top: 45px;
+            }
+            #wrap ul li {
+                position: relative;/* 各自相对各自的父级 */
+                width: 100%;
+                height: 55px;
+                /*background: pink;*/
+                /*margin-top: 10px;如果给margin-top第一个li的上边距会和wrap合并*/
+                margin-bottom: 24px;
+            }
+            #wrap ul li span,#wrap ul li input {
+                float: left;
+            }
+            #wrap ul li span {
+                width: 100px;
+                height: 55px;
+                line-height: 55px;
+                text-align: right;
+            }
+            #wrap ul li input {
+                width: 339px;
+                height: 45px;
+                margin-top: 2px;
+                margin-left: 10px;
+                border: 1px solid #bbb;
+                text-indent: 2px;
+                border-radius: 5px;
+            }
+            #wrap .tip {
+                display: none;
+                position: absolute;
+                top: -4px;
+                left: 453px;
+                width: 310px;
+                height: 60px;
+                line-height: 20px;
+            }
+
+            #wrap .tip i {
+                position: absolute;
+                top: 20px;
+                left: -10px;
+                width: 0;
+                height: 0;
+                border: 10px solid transparent;
+                border-right-color: #56a9d3;
+
+            }
+            #wrap .tip p {
+                float: right;
+                width: 290px;
+                height: 40px;
+                padding: 10px 5px;
+                background: #56a9d3;
+                border-radius: 5px;
+                color: #fff;
+            }
+            #wrap ul li input:focus + div.tip{/* 相邻兄弟元素 因为input是单标签没有子元素 */
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div id="wrap">
+            <form action="" method="">
+                <ul>
+                    <li>
+                        <span>user</span>
+                        <input type="text" placeholder="请输入账号">
+
+                        <div class="tip">
+                            <i></i>
+                            <p>请输入用户名！！！请输入用户名！！！请输入用户名！！！</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span>password</span>
+                        <input type="password" placeholder="请输入密码">
+                    </li>
+                    <li>
+                        <span>password</span>
+                        <input type="password" placeholder="再次输入密码">
+                    </li>
+                    <li>
+                        <span>e-mail</span>
+                        <input type="text" placeholder="输入你的邮箱">
+                    </li>
+                    <li>
+                        <span>nickname</span>
+                        <input type="text" placeholder="昵称">
+                    </li>
+                </ul>
+            </form>
+
+
+        </div>
+
+    </body>
+</html>

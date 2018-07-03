@@ -1,0 +1,54 @@
+<!doctype html> <!-- 文档类型：HTML文档 -->
+<html lang='en'>					<!--html根标签 lang翻译：成英文-->
+	<head>							<!--网页头部-->
+	<meta charset='UTF-8'/>			<!--字符编码：UTF-8 国际编码-->
+	<meta name='keywords' content='关键词1,关键词2 给搜索引擎抓取用'/>
+	<meta name='description' content='网站描述'/>
+	<meta name='Author' content='68603587@qq.com'/>
+	<title>hello world</title>		<!--网页标题-->
+	<style>
+		*{
+			margin:0;padding:0;
+		}
+		body{
+			background-color: #444;
+		}
+		.wrap{
+			width:200px;
+			height:200px;
+			margin:100px auto;
+			background:#fff url('images/demo1/3.jpg') no-repeat center/cover;
+			border-radius:50%;
+			/* overflow:hidden; */
+		}
+		.wrap .mark{
+			background-color:rgba(0,0,0,0.5);
+			padding:72px 0;
+			border-radius:50%;
+			display:none;
+
+		}
+		.wrap:hover .mark{
+			display:block;
+		}
+		.wrap .mark span{
+			display:block;
+			color:#fff;
+			line-height:1.8;
+			text-align:center;
+		}
+		
+
+
+	</style>
+	</head>
+	<body><!--网页主体:可视化区域-->
+		<div class="wrap">
+			<div class='mark'>
+				<span>新品试用</span>
+				<span>IPSA明星王牌套装</span>
+			</div>
+		</div>	
+
+	</body>
+</html> 

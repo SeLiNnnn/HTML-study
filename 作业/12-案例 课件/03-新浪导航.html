@@ -1,0 +1,101 @@
+<!doctype html> <!-- 文档类型：HTML文档 -->
+<html lang='en'>					<!--html根标签 lang翻译：成英文-->
+	<head>							<!--网页头部-->
+	<meta charset='UTF-8'/>			<!--字符编码：UTF-8 国际编码-->
+	<meta name='keywords' content='关键词1,关键词2 给搜索引擎抓取用'/>
+	<meta name='description' content='网站描述'/>
+	<meta name='Author' content='68603587@qq.com'/>
+	<title>hello world</title>		<!--网页标题-->
+	<style>
+		*{
+			margin:0;padding:0;
+		}
+		.clearfix:after{
+			content:'';
+			display:block;
+			clear:both;
+		
+		}
+		.fl{
+		
+			float:left;
+		}
+		.fr{
+		
+			float:right;
+		}
+		body{
+			font:14px/1.5 'Microsoft YaHei';
+		}
+		.container{
+			width:1000px;
+			background-color:#ECF2F7;
+			margin:100px auto;
+			background:url('images/demo3/bg01.png') repeat-x 0 4px;
+		
+		}
+		
+		.container ul li{
+			list-style:none;
+			
+		}
+		.container ul li.active{
+			background:url('images/demo3/bg02.png') no-repeat -2px 0px;
+			
+		}
+		.container ul li.active a{
+			color:yellow;
+			
+		}
+		.container ul li a{
+			display:block;
+			width:90px;
+			line-height:46px;
+			text-decoration:none;
+			text-align: center;
+			color:#fff;
+			
+		} 
+		
+		.container .time{
+			line-height:35px;			
+		}
+
+		.container .time span{
+			margin-left:20px;
+			color:#0E5291;
+			font-size:12px;	
+		}
+		
+		
+		
+
+
+	</style>
+	</head>
+	<body><!--网页主体:可视化区域-->
+		<div class="container">
+			<ul class='clearfix'>
+				<li class='fl'><a href="#">科技首页</a></li>
+				<li class='active fl'><a href="#">IT业界</a></li>
+				<li class='fl'><a href="#">创事记</a></li>
+				<li class='fl'><a href="#">苹果汇</a></li>
+				<li class='fl'><a href="#">电信</a></li>
+				<li class='fl'><a href="#">互联网</a></li>
+				<li class='fl'><a href="#">数码</a></li>
+				<li class='fl'><a href="#">家电</a></li>
+				<li class='fl'><a href="#">A股</a></li>
+				<li class='fl'><a href="#">港股</a></li>
+				<li class='fl'><a href="#">美股</a></li>
+			</ul>
+			<div class="time">
+				<span>北京时间：10月30日 20:51:46</span>
+				<span>美国东部时间：10月30日 08:52:06</span>
+			</div>
+		
+		</div>
+			
+
+		
+	</body>
+</html> 

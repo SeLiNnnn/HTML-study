@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>腾讯课堂左侧菜单</title>
+    <style>
+        body, dl, dd, p, h1, h2, h3, h4, h5, h6 {
+            margin: 0;
+        }
+
+        ol, ul, li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+        }
+        img {
+            border: none;
+        }
+        html {
+            min-width: 1000px;
+        }
+        #center {
+            position: relative;
+            width: 100%;
+            /*height: 475px;*/
+            height: 300px;
+            margin-top: 150px;
+
+        }
+        #banner {
+            width: 100%;
+            height: 300px;
+            background-color: #441b79;
+        }
+        #nav {
+            position: absolute;
+            top: -50px;
+            left: 10%;
+            width: 220px;
+            height: 475px;
+            margin-left: -100px;
+            background: pink;
+        }
+        #nav h2 {
+            position: relative;
+            width:100%;
+            height: 50px;
+            background-color: #188eee;
+            line-height: 50px;
+            font-weight: normal;
+            font-size: 16px;
+            color: #ffffff;
+            text-indent: 50px;
+        }
+        #nav h2 p {
+            overflow: hidden;
+            position: absolute;
+            top: 18px;
+            left: 16px;
+            width: 20px;
+            height: 16px;
+        }
+        #nav h2 p i{
+            display: block;
+            width: 100%;
+            height: 2px;
+            margin-bottom: 5px;
+            background-color: #fff;
+        }
+        #nav .main {
+            position: relative;
+            width: 100%;
+            height: 425px;
+        }
+        #nav .main li{
+            width: 100%;
+            height: 60px;
+            padding: 5px 0;
+            text-indent: 12px;
+            background-color: #0477c0;
+            border-bottom: 1px solid #1681c4;
+        }
+        #nav .main li .title {
+            position: relative;
+            height: 30px;
+            line-height: 30px;
+        }
+        #nav .main li .title a {
+            color: #ffffff;
+            font-size: 16px;
+        }
+        #nav .main li .list {
+            height: 30px;
+            line-height: 30px;
+        }
+        #nav .main li .list a {
+            font-size: 14px;
+            color: #97d2f7;
+            margin-right: 10px;
+        }
+        #nav .main li .arrow {
+            position: absolute;
+            top: 0;
+            right: 10px;
+            color: #97d2f7;
+            font-weight: 100;
+            font-style: normal;
+        }
+        #nav .main li .hide {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 220px;
+            width: 980px;
+            height: 422px;
+            border: 2px solid #0477c0;
+            border-left-width: 0;
+        }
+        #nav .main li:hover .hide {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="center">
+        <div id="banner"></div>
+        <div id="nav">
+            <h2>
+                <p>
+                    <i></i><i></i><i></i>
+                </p>
+                <span>全部课程</span>
+            </h2>
+            <!--  ul>li*6>(p.title>a)+(p.list>a)+i.arrow -->
+            <ul class="main">
+                <li>
+                    <p class="title"><a href="">IT·互联网</a><i class="arrow">&gt</i></p>
+                    <p class="list"><a href="">前端开发&nbspLinux运维</a></p>
+                    <div class="hide" style="background-color: red"></div>
+                </li>
+                <li>
+                    <p class="title"><a href="">设计·创意</a><i class="arrow">&gt</i></p>
+                    <p class="list"><a href="">平面设计&nbsp游戏美术设计&nbspCAD</a></p>
+                    <div class="hide" style="background-color: yellow"></div>
+                </li>
+                <li>
+                    <p class="title"><a href="">语言·留学</a><i class="arrow">&gt</i></p>
+                    <p class="list"><a href="">实用口语雅思托福</a></p>
+                    <div class="hide" style="background-color: blue"></div>
+                </li>
+                <li>
+                    <p class="title"><a href="">职业·考证</a><i class="arrow">&gt</i></p>
+                    <p class="list"><a href="">公务员教师考试建造工程</a></p>
+                    <div class="hide" style="background-color: grey"></div>
+                </li>
+                <li>
+                    <p class="title"><a href="">升学·考研</a><i class="arrow">&gt</i></p>
+                    <p class="list"><a href="">考研大学高中初中</a></p>
+                    <div class="hide" style="background-color: orange"></div>
+                </li>
+                <li>
+                    <p class="title"><a href="">兴趣·生活</a><i class="arrow">&gt</i></p>
+                    <p class="list"><a href="">摄影乐器美妆育儿</a></p>
+                    <div class="hide first" style="background-color: purple"></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

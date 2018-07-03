@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>03-伪元素</title>
+    <style>
+        body, dl, dd, p, h1, h2, h3, h4, h5, h6 {
+            margin: 0;
+        }
+
+        ol, ul, li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        img {
+            border: none;
+        }
+        div::before{
+            display: block;/*伪元素是行内元素*/
+            content: '456';/*这是必须的属性*/
+            color: red;
+            width: 100px;
+            height: 40px;
+            background: pink;
+        }
+        div::after{
+            content: '789';
+        }
+    </style>
+</head>
+<body>
+
+    <div>我是div</div>
+
+</body>
+</html>

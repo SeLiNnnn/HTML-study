@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>08-背景属性</title>
+    <style>
+        body, dl, dd, p, h1, h2, h3, h4, h5, h6 {
+            margin: 0;
+        }
+
+        ol, ul, li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        img {
+            border: none;
+        }
+        /*#goudan{*/
+            /*width: 200px;*/
+            /*height: 200px;*/
+            /*background: pink;*/
+        /*}*/
+
+        #box{
+            width: 300px;
+            height: 300px;
+            /*background-color: pink;*/
+            /*background-image: url("1.jpg");*/
+            /*background-repeat: no-repeat;*/
+            /*background-attachment: fixed;*/
+            background:pink url("1.jpg") no-repeat left top fixed;
+
+        }
+    </style>
+</head>
+<body style="height: 2000px;">
+    <div id="goudan"></div>
+
+    <div id="box"></div>
+</body>
+</html>

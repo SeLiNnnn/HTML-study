@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>05-选择器优先规则</title>
+    <style>
+        body, dl, dd, p, h1, h2, h3, h4, h5, h6 {
+            margin: 0;
+        }
+
+        ol, ul, li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        img {
+            border: none;
+        }
+
+        /*.hh{*/
+            /*color: blue;*/
+        /*}*/
+
+        /*#gg{*/
+            /*color: red;*/
+        /*}*/
+
+        #main .hh{
+            color: greenyellow;
+        }
+
+        /*p{*/
+            /*color: yellow;*/
+        /*}*/
+
+        p#gg.hh{
+            color: red;
+        }
+
+        span{
+            color: #666 !important;
+        }
+    </style>
+</head>
+<body id="main">
+
+    <p id="gg" class="hh" style="color: blueviolet;">恍恍惚惚</p>
+    <span id="gg" class="hh" style="color: blueviolet;">恍恍惚惚</span>
+</body>
+</html>

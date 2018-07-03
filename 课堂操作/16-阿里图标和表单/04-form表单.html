@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>04-form表单</title>
+    <style>
+        body, dl, dd, p, h1, h2, h3, h4, h5, h6 {
+            margin: 0;
+        }
+
+        ol, ul, li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        img {
+            border: none;
+        }
+        #test:focus{
+            color: red;
+        }
+        #test {
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <!--form 将数据发送到后端
+            action="后端地址"
+            method="get"  /post
+        提交按钮
+            input type="submit";
+    -->
+    <form action="xxx.php" method="get">
+        用户名:<input type="text" name="user" value="+86" id="test">
+        密码：<input type="password" name="pwd" placeholder="请输入密码">
+        <!--name值不相同-->
+
+        你最喜欢哪把枪？
+        <input type="radio" name="pick" value="0">Kar98K
+        <input type="radio" name="pick" value="1">AWM
+        <input type="radio" name="pick" value="2">AUG
+        <input type="radio" name="pick" value="3">GROZA
+        <!--name值相同时是单项选择-->
+
+        <br>
+
+        您的性别：
+        男：<input type="radio" name="sex" value="0" id="boy" checked>
+        女：<input type="radio" name="sex" value="1" id="girl" checked>
+
+        <br>
+        <label for="boy" >男</label>
+        <label for="girl">女</label>
+
+        <br>
+        你最喜欢哪把枪？
+        <input type="radio" name="pick" value="0" id="98k"><label for="98k">Kar98k</label>
+        <input type="radio" name="pick" value="1" id="awm"><label for="awm">AWM</label>
+
+        <br>
+        你喜欢的载具？
+        <input type="checkbox" name="cbox1" checked>bongbong
+        <input type="checkbox" name="cbox2" checked>越野车
+        <input type="checkbox" name="cbox3">皮卡
+        <input type="checkbox" name="cbox4">摩的
+        <input type="checkbox" name="cbox4" disabled>甩火腿
+
+        <br>
+        文件上传<input type="file" name="file">
+        <br>
+        <input type="hidden" name="hide" value="1">
+
+        <br>
+        今天周几：
+        <select name="" size="2">
+            <option value="">周一</option>
+            <option value="" selected>周二</option>
+            <option value="">周三</option>
+            <option value="">周四</option>
+        </select>
+
+        <br>
+        <textarea name="tarea" id="" cols="5" rows="3"></textarea>
+
+
+
+        <br>
+        <input type="submit"  value="点我提交">
+    </form>
+
+
+</body>
+</html>

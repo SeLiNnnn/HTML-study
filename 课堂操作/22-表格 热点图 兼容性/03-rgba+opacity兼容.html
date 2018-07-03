@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>03-rgba+opacity兼容</title>
+    <meta name="keywords" content="关键词">
+    <meta name="description" content="描述">
+    <meta name="author" content="SeLiNnnn">
+    <style>
+        body,dl,dd,p,h1,h2,h3,h4,h5,h6{margin:0;}
+        ol,ul,li{margin:0;padding:0;list-style:none;}
+        img{border:none;}
+        a{text-decoration:none;}
+
+        div {
+            position: relative;
+            width: 300px;
+            height: 300px;
+
+        }
+        div .bg {/* 用来做底色 防止alpha导致所有内容都透明 */
+            position: absolute;
+            background: rgb(255,0,0);
+            filter: alpha(opacity=50);
+        }
+        div p {/* 内容定位在上方 透明度就不会对内容有影响 */
+            position: relative;
+            z-index: 2;
+            width: 100px;
+            height: 100px;
+            background: green;
+        }/* 但如果这样做 主流浏览器的布局方式也要和这个一致 很复杂 没必要 */
+    </style>
+</head>
+<body>
+    <div>
+        <div class="bg"></div>
+        <p></p>
+    </div>
+
+<script>
+
+</script>
+</body>
+</html>

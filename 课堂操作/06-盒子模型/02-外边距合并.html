@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>04-外边距合并</title>
+
+    <style>
+
+        body,p,ul{
+            margin: 0;
+            padding: 0;
+        }
+
+        div{
+            width: 200px;
+            height: 200px;
+            background: red;
+            /*overflow: hidden;*/
+        }
+
+        p{
+            width: 50px;
+            height: 50px;
+            background: pink;
+            margin-top: 20px;/*此时并不能让p标签和div拉开距离，而是把margin值传递给了父级div*/
+        }
+        ul{
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div>
+        <p>123</p>
+        <ul>233</ul>
+    </div>
+
+</body>
+</html>

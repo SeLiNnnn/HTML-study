@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01-选择器高级</title>
+    <style>
+        body, dl, dd, p, h1, h2, h3, h4, h5, h6 {
+            margin: 0;
+        }
+
+        ol, ul, li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        img {
+            border: none;
+        }
+        /*很麻烦的写法*/
+        /*#wrap a{*/
+            /*color: red;*/
+        /*}*/
+
+        /*#wrap p a{*/
+            /*color: #000;*/
+        /*}*/
+
+        /*#wrap > a{*/
+            /*color: greenyellow;*/
+        /*}*/
+
+        /*p + span{*/
+            /*color: blueviolet;*/
+        /*}*/
+
+        /*div.box[goudan="456"] {*/
+            /*color: red;*/
+        /*}*/
+        [class ~= box666]{
+            color: orange;
+        }
+        /*[title *= "123"]{*/
+            /*font-size: 20px;*/
+        /*}*/
+        [class *= box666]{
+            font-size: 30px;
+        }
+        [goudan *= "4"]{
+            color: blueviolet;
+        }
+        [goudan ~= "456"]{
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+    <!--<div id="wrap">-->
+        <!--<a href="">啦啦啦啦啦</a>-->
+        <!--<p>-->
+            <!--<a href="">哦哦哦哦哦</a>-->
+        <!--</p>-->
+    <!--</div>-->
+
+    <!--<p>低调低调</p>-->
+    <!--<span>地方大幅度</span>-->
+
+    <!--<div>的的的</div>-->
+    <!--<span>斤斤计较军</span>-->
+
+    <div class="box">div1</div>
+    <div class="box666" title="1236" goudan="456">div2</div>
+    <div class="box666 box233" title="12345" goudan="456 789">div3</div>
+    <a href="" title="链接">aaa</a>
+</body>
+</html>

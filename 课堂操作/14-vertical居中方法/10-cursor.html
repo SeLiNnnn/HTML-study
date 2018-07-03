@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>10-cursor</title>
+    <style>
+        body, dl, dd, p, h1, h2, h3, h4, h5, h6 {
+            margin: 0;
+        }
+
+        ol, ul, li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        img {
+            border: none;
+        }
+        html{
+            cursor: text;
+        }
+        p{
+            cursor: pointer;
+        }
+        span{
+            cursor: crosshair;
+        }
+        div{
+            width: 500px;
+            height: 500px;
+            background: pink;
+            cursor: url(""),pointer;/*自定义光标样式 需要一个光标图形文件，后缀最好是 .cur .ico*/
+            /*必须加上备用指针样式才能显示*/
+        }
+    </style>
+</head>
+<body>
+    <p>ssssss</p>
+    <span>hhhhhhhhhh</span>
+    <div></div>
+</body>
+</html>

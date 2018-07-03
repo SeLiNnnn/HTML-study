@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>07-用定位来做居中</title>
+    <style>
+        body, dl, dd, p, h1, h2, h3, h4, h5, h6 {
+            margin: 0;
+        }
+
+        ol, ul, li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        img {
+            border: none;
+        }
+        #wrap{
+            position: relative;
+            width: 800px;
+            height: 500px;
+            border: 5px solid pink;
+            margin: 50px auto;
+        }
+        #wrap p{
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;/*四个值全部写上，再加上margin:auto即可*/
+            width: 100px;
+            height: 100px;
+            background: red;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <p></p>
+    </div>
+</body>
+</html>

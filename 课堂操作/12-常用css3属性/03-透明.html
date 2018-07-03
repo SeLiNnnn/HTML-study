@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>03-透明</title>
+    <style>
+        body, dl, dd, p, h1, h2, h3, h4, h5, h6 {
+            margin: 0;
+        }
+
+        ol, ul, li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        img {
+            border: none;
+        }
+        .box {
+            width: 50px;
+            height: 50px;
+
+            margin: 100px auto;
+            color: #f00;
+
+            background: rgba(0,0,0,0.5);
+        }
+        #box{
+            background: #000;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <div id="box" class="box">
+        opacity
+    </div>
+    <div class="box">
+        rgba
+    </div>
+</body>
+</html>
