@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+html {
+    min-width: 1200px;
+}
+#header {
+    width: 100%;
+    height: 894px;
+    /*background: pink;*/
+    background: url("../img/header/banner.jpg") no-repeat top center;/* 禁止平铺，以及确保背景图居中 */
+}
+#h-main {
+    position: relative;
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    /*background: pink;*/
+}
+#h-nav {
+    width: 100%;
+    height: 38px;
+    padding-top: 26px;
+    /*background: pink;*/
+}
+#h-main .h-n-logo {
+    float: left;
+    width: 210px;
+    height: 100%;
+    /*background: green;*/
+}
+#h-main .h-n-nav {
+    overflow: hidden;
+    float: right;
+    width: 772px;
+    height: 100%;
+    /*background: red;*/
+}
+#h-main .h-n-nav ul {
+    width: 200%;
+    height: 100%;
+}
+#h-main .h-n-nav ul li {
+    float: left;
+    height: 100%;
+    margin-left: 44px;
+    font-size: 16px;
+    line-height: 38px;
+}
+#h-main .h-n-nav ul li a{
+    display: block;/* a标签转为块级元素，就可给定宽高，使得可被点击的区域不仅仅只是几个文字 */
+    width: 100%;
+    height: 100%;/* 还是写成100%比较好 */
+    color: #fff;
+    transition: color .3s;
+}
+#h-main .h-n-nav ul li.active a,#h-main .h-n-nav ul li a:hover {
+    color: #09cbd7;
+}
+#h-center {
+    width: 691px;
+    height: 312px;
+    margin-top: 225px;
+    /*background: red;*/
+}
+#h-center .p1 {
+    width: 691px;
+    height: 82px;
+    background-image: url("../img/header/WEB.png");
+}
+#h-center .p2 {
+    width: 382px;
+    height: 44px;
+    margin-top: 50px;
+    background-image: url("../img/header/HTML5.png");
+}
+#h-center .p3{
+    /*display: block;*/
+    width: 224px;
+    height: 65px;
+    margin-top: 70px;
+    background: #09cbd7 url("../img/header/MORE.png") no-repeat center center;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+#h-tab {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    margin-left: -28px;/* 居中定位，回去自身宽度的一半 */
+    width: 56px;
+    height: 4px;
+}
+#h-tab .btn {
+    width: 18px;
+    height: 4px;
+    background-color: #06c9d5;
+    border-radius: 2px;
+    cursor: pointer;
+}
+#h-tab .btn.active {
+    background-color: #fff;
+}
+#h-tab .leftBtn {
+    float: left;
+    margin-left: 5px;
+}
+#h-tab .rightBtn {
+    float: right;
+    margin-right: 5px;
+}
+
