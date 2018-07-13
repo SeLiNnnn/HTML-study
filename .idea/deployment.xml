@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="HTML-study" uploadOnCheckin="697b3f97-6a0f-46d7-b352-899ec083d111">
+    <serverData>
+      <paths name="HTML-study">
+        <serverdata>
+          <mappings>
+            <mapping deploy="\" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myUploadOnCheckinName" value="HTML-study" />
+  </component>
+</project>

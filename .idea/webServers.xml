@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="697b3f97-6a0f-46d7-b352-899ec083d111" name="HTML-study" url="https://github.com/selin0410/HTML-study">
+        <fileTransfer port="0" mountedRoot="G:\WEB\HTML精英实验班课堂操作&amp;作业" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>
